@@ -1,0 +1,25 @@
+.profile-card {
+    &-left {
+        position: relative;
+        &__img {
+            position: relative;
+        }
+        &__duration {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: rgba($color: #000000, $alpha: 0.7);
+            padding: 4px;
+            color: $color-white;
+        }
+    }
+    &-right {
+        &__title {
+        }
+        &__desc {
+            color: #868197;
+            width: 95%;
+            text-align: justify;
+        }
+    }
+}

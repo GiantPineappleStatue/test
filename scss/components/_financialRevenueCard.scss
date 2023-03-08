@@ -1,0 +1,9 @@
+.financial-revenue-card {
+    & label:before {
+        border-radius: 5px;
+        color: #fff !important;
+    }
+    & label:after {
+        color: #fff !important;
+    }
+}

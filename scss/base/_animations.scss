@@ -1,0 +1,10 @@
+.floating-animation {
+    position: relative;
+    animation: floating 6s ease-in-out infinite;
+    -webkit-animation: floating 6s ease-in-out infinite;
+    -moz-animation: floating 6s ease-in-out infinite;
+}
+
+.blur-effect{
+    filter: blur(4px);
+}

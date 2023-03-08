@@ -1,0 +1,255 @@
+// mixins
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 900px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 1400px) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 1800px) {
+            @content;
+        }
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin rotate($rotation) {
+    -webkit-transform: rotate($rotation);
+    -moz-transform: rotate($rotation);
+    -ms-transform: rotate($rotation);
+    -o-transform: rotate($rotation);
+    transform: rotate($rotation);
+}
+
+@mixin box-sizing($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+    -moz-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+}
+@mixin transition-property($transition) {
+    -webkit-transition-property: $transition;
+    -moz-transition-property: $transition;
+    -o-transition-property: $transition;
+    transition-property: $transition;
+}
+
+@mixin transition-duration($duration) {
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    -o-transition-duration: $duration;
+    transition-duration: $duration;
+}
+
+@mixin transition-timing-function($timing) {
+    -webkit-transition-timing-function: $timing;
+    -moz-transition-timing-function: $timing;
+    -o-transition-timing-function: $timing;
+    transition-timing-function: $timing;
+}
+
+@mixin mobile() {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet-and-lower() {
+    @media only screen and (max-width: 820px) {
+      @content;
+    }
+  }
+  
+  // GRID
+  $one-twelfth: calc(100vw / 12);
+  $two-twelfths: calc(100vw * 2 / 12);
+  $three-twelfths: calc(100vw * 3 / 12);
+  $four-twelfths: calc(100vw * 4 / 12);
+  $five-twelfths: calc(100vw * 5 / 12);
+  $six-twelfths: calc(100vw * 6 / 12);
+  $seven-twelfths: calc(100vw * 7 / 12);
+  $eight-twelfths: calc(100vw * 8 / 12);
+  $nine-twelfths: calc(100vw * 9 / 12);
+  $ten-twelfths: calc(100vw * 10 / 12);
+  $eleven-twelfths: calc(100vw * 11 / 12);
+  $full: 100%;
+  
+  // Flexbox// --------------------------------------------------
+  // Flexbox SASS mixins
+  // The spec: http://www.w3.org/TR/css3-flexbox
+  // --------------------------------------------------
+  
+  // Flexbox display
+  @mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  // The 'flex' shorthand
+  // - applies to: flex items
+  // <positive-number>, initial, auto, or none
+  @mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
+  }
+  
+  // Flex Flow Direction
+  // - applies to: flex containers
+  // row | row-reverse | column | column-reverse
+  @mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+  }
+  
+  // Flex Line Wrapping
+  // - applies to: flex containers
+  // nowrap | wrap | wrap-reverse
+  @mixin flex-wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+  }
+  
+  // Flex Direction and Wrap
+  // - applies to: flex containers
+  // <flex-direction> || <flex-wrap>
+  @mixin flex-flow($flow) {
+    -webkit-flex-flow: $flow;
+    -moz-flex-flow: $flow;
+    -ms-flex-flow: $flow;
+    flex-flow: $flow;
+  }
+  
+  // Display Order
+  // - applies to: flex items
+  // <integer>
+  @mixin order($val) {
+    -webkit-box-ordinal-group: $val;
+    -moz-box-ordinal-group: $val;
+    -ms-flex-order: $val;
+    -webkit-order: $val;
+    order: $val;
+  }
+  
+  // Flex grow factor
+  // - applies to: flex items
+  // <number>
+  @mixin flex-grow($grow) {
+    -webkit-flex-grow: $grow;
+    -moz-flex-grow: $grow;
+    -ms-flex-grow: $grow;
+    flex-grow: $grow;
+  }
+  
+  // Flex shrink
+  // - applies to: flex item shrink factor
+  // <number>
+  @mixin flex-shrink($shrink) {
+    -webkit-flex-shrink: $shrink;
+    -moz-flex-shrink: $shrink;
+    -ms-flex-shrink: $shrink;
+    flex-shrink: $shrink;
+  }
+  
+  // Flex basis
+  // - the initial main size of the flex item
+  // - applies to: flex itemsnitial main size of the flex item
+  // <width>
+  @mixin flex-basis($width) {
+    -webkit-flex-basis: $width;
+    -moz-flex-basis: $width;
+    -ms-flex-basis: $width;
+    flex-basis: $width;
+  }
+  
+  // Axis Alignment
+  // - applies to: flex containers
+  // flex-start | flex-end | center | space-between | space-around
+  @mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+  }
+  
+  // Packing Flex Lines
+  // - applies to: multi-line flex containers
+  // flex-start | flex-end | center | space-between | space-around | stretch
+  @mixin align-content($align) {
+    -webkit-align-content: $align;
+    -moz-align-content: $align;
+    -ms-align-content: $align;
+    align-content: $align;
+  }
+  
+  // Cross-axis Alignment
+  // - applies to: flex containers
+  // flex-start | flex-end | center | baseline | stretch
+  @mixin align-items($align) {
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-align-items: $align;
+    align-items: $align;
+  }
+  
+  // Cross-axis Alignment
+  // - applies to: flex items
+  // auto | flex-start | flex-end | center | baseline | stretch
+  @mixin align-self($align) {
+    -webkit-align-self: $align;
+    -moz-align-self: $align;
+    -ms-align-self: $align;
+    align-self: $align;
+  }
+  
+  // Mixin
+  @mixin transform($transforms...) {
+    // combine the passed transforms into a space separated list
+    $transform-list: join($transforms, null, space);
+  
+    // print out the transforms
+    -webkit-transform: $transform-list;
+    -moz-transform: $transform-list;
+    -ms-transform: $transform-list;
+    -o-transform: $transform-list;
+    transform: $transform-list;
+  }
+  
+  @mixin rotated-text(
+    $num-letters: 100,
+    $angle-span: 180deg,
+    $angle-offset: 0deg
+  ) {
+    $angle-per-char: $angle-span / $num-letters;
+    @for $i from 1 through $num-letters {
+      .char#{$i} {
+        @include transform(rotate($angle-offset + $angle-per-char * $i));
+      }
+    }
+  }
+  

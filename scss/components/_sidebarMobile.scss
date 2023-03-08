@@ -1,0 +1,19 @@
+.nav-menu-items {
+    padding: 0;
+}
+#nav-menu {
+    background-color: #07011e;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 1100;
+}
+#nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}

@@ -1,0 +1,8 @@
+.image-gallery {
+    &:hover &-icon {
+        opacity: 1;
+    }
+    &-icon {
+        opacity: 0;
+    }
+}

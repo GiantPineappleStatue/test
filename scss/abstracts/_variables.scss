@@ -1,0 +1,156 @@
+$color-primary: #4e3887;
+$color-secondary: #3a2a64;
+$color-tertiary-light: #302557;
+
+$color-blue-light: #1ba6ff;
+$color-green-light: #5fbc13;
+$color-purple-light: #8f5aff;
+$color-purple-light-more: #b07bff;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-primary-light: #271851;
+$color-primary-dark: #180f3a;
+
+$color-black-light: #b4a9c7;
+
+// New UI
+
+$--sidebar-bg: #160d2f;
+$--tagline: #6d687d;
+$--active: #90e40d;
+$--search-background: #211543;
+$--body-background: #07011e;
+$--footer-bg: #211543;
+
+// V2 colors
+$white: #ffffff;
+$black: #262626;
+$blue: #211543;
+$dark-blue: #160D2F;
+$gray: #95989a;
+$bg-dark: #07011e;
+$green: #90e40d;
+$white-opacity: rgba(255, 255, 255, 0.5);
+$sea-blue: #56ccf2;
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-BoldItalic.woff2') format('woff2'),
+        url('../font/CircularStd-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Bold.woff2') format('woff2'),
+        url('../font/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-BlackItalic.woff2') format('woff2'),
+        url('../font/CircularStd-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std Book';
+    src: url('../font/CircularStd-BookItalic.woff2') format('woff2'),
+        url('../font/CircularStd-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Black.woff2') format('woff2'),
+        url('../font/CircularStd-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std Book';
+    src: url('../font/CircularStd-Book.woff2') format('woff2'),
+        url('../font/CircularStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularSpotifyText-Light.woff2') format('woff2'),
+        url('../font/CircularSpotifyText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularSpotifyText-LightItalic.woff2') format('woff2'),
+        url('../font/CircularSpotifyText-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-Medium.woff2') format('woff2'),
+        url('../font/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('../font/CircularStd-MediumItalic.woff2') format('woff2'),
+        url('../font/CircularStd-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  $font-family: "Circular Std";
+  $bold-weight: 700;
+  $medium-weight: 500;
+  $normal-weight: 600;
+  $regular-weight: 400;
+  
+  // MIXINS FOR FONTS
+  @mixin font-bold() {
+    font-family: $font-family;
+      font-weight: $bold-weight;
+  }
+  @mixin font-medium() {
+    font-family: $font-family;
+    font-weight: $medium-weight;
+  }
+  @mixin font-regular() {
+    font-family: $font-family;
+    font-weight: $regular-weight;
+  }
+  @mixin body-font() {
+    font-family: $font-family;
+    $bold-weight: 400;
+    font-weight: $regular-weight;
+  }
+  @mixin font-normal {
+    font-family: $font-family;
+    font-weight: $normal-weight;
+  }
+  

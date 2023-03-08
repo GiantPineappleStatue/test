@@ -1,0 +1,6 @@
+.watch-and-revenue-card {
+    width: 20%;
+    @include responsive(phone) {
+        width: 40%;
+    }
+}

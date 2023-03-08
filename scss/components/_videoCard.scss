@@ -1,0 +1,177 @@
+.video-card {
+    max-width: 25rem;
+    margin: 0.5rem 0.4rem;
+    position: relative;
+    &.audio-album {
+        width: 200px;
+        // & img {
+        // 	width: 100% !important;
+        // 	height: 170px !important;
+        // }
+    }
+    &.video-album {
+        width: 300px;
+        // .video-card__thumbnail {
+        // 	width: 100%;
+        // }
+    }
+    &__thumbnail {
+        position: relative;
+        width: 300px;
+        height: 168.75px;
+        object-fit: cover;
+    }
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 13px;
+        z-index: 20;
+    }
+    &__edit {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        font-size: 13px;
+        z-index: 20;
+    }
+    &__add-playlist {
+        position: absolute;
+        top: 0;
+        left: 60px;
+        font-size: 13px;
+        z-index: 20;
+    }
+    &__rating {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 0px 0px 0px 10px;
+        color: #fff;
+        font-size: 13px;
+        padding: 0px 10px;
+    }
+    &-title__rows {
+        // font-size: 1px;
+        // background: rgba(0, 0, 0, .7);
+        // position: absolute;
+        // bottom: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+.home-featured-videos {
+    & img {
+        width: 400px !important;
+        height: 225px !important;
+        @include responsive(phone){
+            width: 340px !important;
+        }
+        @media (max-width:399px) {
+            width: 315px !important;
+        }
+    }
+}
+.custom-video-card {
+    max-width: 27rem !important;
+    & img {
+        position: relative;
+        width: 350px !important;
+        height: 196.88px !important;
+        object-fit: cover;
+        @include responsive(phone) {
+            width: 240px !important;
+        }
+    }
+}
+div.video-card.profile-audio-card {
+    max-width: 17rem;
+    margin: 0.7rem 0.4rem !important;
+    & img {
+        width: 200px;
+        height: 200px;
+    }
+}
+//Admin Video Card
+.admin-video-card {
+    max-width: 23rem !important;
+}
+//  Dashboard classes
+.home-video-card {
+    max-width: 24rem;
+    @include responsive(phone) {
+        & img {
+            width: 210px;
+        }
+        max-width: 13.5rem;
+    }
+    @include responsive(big-desktop) {
+        max-width: 23rem !important;
+    }
+}
+
+div.home-audio-card.profile-audio-card {
+    @include responsive(big-desktop) {
+        margin: 0.7rem 0.8rem !important;
+    }
+}
+.home-sponsored-arrow {
+    padding: 102px 10px;
+    margin-bottom: 35px;
+}
+.video-height {
+    // padding: 155px 10px;
+    // padding: 190px 10px;
+    // margin-bottom: 20px;
+    padding: 72px 10px;
+    margin-bottom: 21px !important;
+}
+.audio-height {
+    // padding: 75px 10px;
+    padding: 88px 10px;
+    margin-bottom: 21px !important;
+}
+
+@media (min-width: 992px) {
+    .video-container {
+        justify-content: space-between !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .custom-video-card {
+        max-width: 28rem !important;
+    }
+    .profile-audio-card {
+        max-width: 18rem;
+    }
+}
+@media (min-width: 1700px) {
+    .video-card {
+        max-width: 24rem;
+        margin: 0.7rem 0.8rem;
+    }
+    .home-sponsored-arrow {
+        // padding: 75px 10px;
+        padding: 90px 10px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1800px) {
+    .video-card {
+        max-width: 26rem;
+    }
+    .profile-audio-card {
+        max-width: 20rem;
+    }
+}
+@media (min-width: 1880px) {
+    .video-card {
+        max-width: 27rem;
+    }
+    .profile-audio-card {
+        max-width: 20rem;
+        margin: 0.7rem 1rem;
+    }
+}

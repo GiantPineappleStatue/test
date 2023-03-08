@@ -1,0 +1,58 @@
+.search {
+    @include responsive(phone){
+        width: 22rem;
+    }
+    width: 35rem !important;
+    height: auto;
+    margin-bottom: 0.5rem !important;
+    & img {
+        max-height: 12rem !important;
+    }
+}
+// Tempraroly Disabled Start
+.search-card {
+    &-left {
+        position: relative;
+        &__img {
+            position: relative;
+        }
+        &__duration {
+            position: absolute;
+            right: 0;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            padding: 5px;
+            bottom: 0;
+            font-weight: 400;
+            background: rgba($color: #000000, $alpha: 0.8);
+            color: $color-white;
+        }
+    }
+    &-right {
+        &__rating {
+            background: $color-black;
+            color: $color-blue-light !important;
+            display: inline-block;
+            align-items: center;
+        }
+        &__category {
+            & span {
+                vertical-align: top;
+            }
+        }
+        &__desc {
+            font-weight: 500;
+            font-size: 0.8rem;
+        }
+        &__tag {
+            background: rgba($color: #000000, $alpha: 0.8);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            display: inline;
+            font-size: small;
+        }
+    }
+}
+// End

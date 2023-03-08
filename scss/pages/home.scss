@@ -1,0 +1,24 @@
+.home-hover {
+    & .video-card-title__rows {
+        display: none;
+    }
+    & .video-card__rating {
+        display: none;
+    }
+    &:hover .video-card__rating {
+        display: block;
+    }
+    & .video-card__mature {
+        display: none;
+    }
+    &:hover .video-card__mature {
+        display: block;
+    }
+    &:hover .video-card-title__rows {
+        display: block;
+    }
+}
+
+.video .menu-wrapper--inner {
+    // width: 3500px !important;
+}

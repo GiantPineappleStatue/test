@@ -1,0 +1,21 @@
+.lets-make-movie-header-v2{
+    &-toggle-btn{
+        background-color: #8041FF;
+        color: rgba(0,0,0,0.6);
+        border-radius: 0.4rem;
+        padding: 0.1rem;
+        // filter: drop-shadow(0px 1px 5px rgba(128, 65,255,0.3));
+        box-shadow: rgba(128, 65,255,0.4) 2.5px 3px 2.6px;
+    }
+    &-auth-btn{
+        & a{
+            padding:0.3rem 0.7rem;
+            margin: 0 0.5rem ;
+            background-color: #8041FF;
+            border-radius: 0.4rem;
+            // filter: drop-shadow(0px 1px 5px rgba(128, 65,255,0.4));
+        box-shadow: rgba(128, 65,255,0.4) 2.5px 3px 2.6px;
+
+        }
+    }
+}

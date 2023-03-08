@@ -1,0 +1,48 @@
+.login-form {
+    &-top {
+        &__line {
+            width: 100px;
+            height: 1px;
+            background: $color-white;
+        }
+        &__img {
+            border: 1px solid $color-white;
+        }
+    }
+    &__feild-icon {
+        background: #110037;
+        color: #d1d1d1;
+    }
+    &__input {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 1.2rem;
+        border: 1px solid #d1d1d1;
+        &::placeholder {
+            color: #200937;
+        }
+    }
+    &__btn {
+        background: #199aff;
+        color: #ededed;
+    }
+    &__checkbox {
+        border: 1px solid $color-white;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    &-bottom {
+        &-line {
+            width: 100%;
+            height: 1px;
+            background: #dee9ee;
+        }
+        &__left {
+            color: #d0d1d3;
+        }
+        &__right {
+            color: #5e647c;
+            font-style: italic;
+        }
+    }
+}

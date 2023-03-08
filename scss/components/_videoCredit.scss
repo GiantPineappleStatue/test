@@ -1,0 +1,13 @@
+.video-credit {
+    background: #271851;
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background: #362763;
+    }
+    &__item {
+        &--user {
+            background: #312462;
+        }
+    }
+}

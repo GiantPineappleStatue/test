@@ -1,0 +1,49 @@
+.video-upload-adDetails {
+    background: rgba(81, 31, 145, 0.5);
+    &__title {
+        background: #5b1aac;
+        padding: 1rem 0;
+    }
+    &__cost {
+        background: #501995 !important;
+        padding: 0.8rem 0.5rem;
+        &-right {
+            &--line {
+                width: 1px;
+                height: 20px;
+                background: #6f45a5;
+                margin: 0 0.5rem;
+            }
+        }
+        &--dropdown {
+            &--bg {
+                background: #5b1aac;
+            }
+            &__caret {
+                position: absolute;
+                top: -36px;
+                right: 10px;
+            }
+            &__caret:before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid #501995;
+            }
+            & .MuiPaper-root {
+                position: relative;
+                background: rgba(81, 31, 145, 1);
+
+                margin-top: 5px;
+                border-radius: 5px;
+                margin-right: 0px !important;
+            }
+        }
+    }
+    &__views {
+        border: 1px solid #6e31bb;
+        padding: 0.8rem 0.5rem;
+    }
+}

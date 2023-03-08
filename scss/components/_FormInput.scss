@@ -1,0 +1,11 @@
+.form-input {
+    &__feild {
+        border: 1px solid #514877;
+        border-radius: 0 !important;
+        color: $color-black-light;
+        &:focus {
+            color: $color-black-light;
+            outline: none;
+        }
+    }
+}

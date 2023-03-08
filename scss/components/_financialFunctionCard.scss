@@ -1,0 +1,24 @@
+.financial-function-card {
+    border-bottom: 1px solid #35295f;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    & label:before {
+        border-radius: 5px;
+        color: $color-white !important;
+    }
+    & label:after {
+        color: $color-white !important;
+    }
+    &__video {
+        background: #1ba6ff;
+        & label:before {
+            border: 1px solid $color-white !important;
+        }
+    }
+    &__audio {
+        background: #b761de;
+        & label:before {
+            border: 1px solid $color-white !important;
+        }
+    }
+}

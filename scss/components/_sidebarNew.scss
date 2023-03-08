@@ -1,0 +1,101 @@
+.sidebar {
+    width: 270px;
+    height: 100vh;
+    padding: 20px 0px;
+    background: $--sidebar-bg;
+    color: #fff;
+    position: fixed;
+
+    transition: 1s;
+    z-index: 10;
+    &.display {
+        display: block;
+        transition: 0.5s;
+        transform: translateX(0);
+        z-index: 10001;
+    }
+
+    &.hidden {
+        display: none;
+        transition: 0.5s;
+        transform: translateX(-100%);
+    }
+    &.width {
+        width: 58px !important;
+        overflow: hidden;
+    }
+    & img {
+        width: 30px;
+    }
+    & .minisidebar-imgs {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: self-start;
+        padding-left: 15px;
+    }
+    & .minisidebar-imgs img {
+        margin: 20px 0;
+    }
+
+    & .sidebar-header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .sidebar-content-container {
+        padding-top: 30px;
+        width: 100%;
+    }
+    @media only screen and (max-width: 1199px) {
+        width: 240px;
+    }
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+    @media only screen and (max-width: 991px) {
+        & .sidebar-pos {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 250px;
+            z-index: 20;
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        width: 250px;
+    }
+}
+
+// Sidebar Content
+.sidebar-content {
+    padding: 10px 0;
+
+    & .sidebar-header h5 {
+        font-weight: 450;
+        font-size: 22px;
+    }
+    & .sidebar-content span {
+        font-size: 18px;
+        font-weight: 450;
+        opacity: 0.7;
+    }
+    & .sidebar-content .img {
+        color: var(--tagline);
+        opacity: 0.7;
+        width: 20px;
+    }
+    &-title {
+        margin-left: 1rem;
+    }
+    & .dropdown {
+        padding-left: 35px;
+    }
+    & .line {
+        position: absolute;
+        top: -8px;
+        left: -20px;
+        font-size: 24px;
+    }
+}

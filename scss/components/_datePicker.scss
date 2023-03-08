@@ -1,0 +1,52 @@
+.date-picker {
+    & .react-date-picker__inputGroup {
+        & input {
+            color: $color-white;
+        }
+    }
+    & .react-date-picker__button {
+        color: $color-white;
+    }
+    & .react-calendar {
+        // background: black !important;
+        &__navigation {
+            background: #473093 !important;
+            margin-bottom: 0.2rem !important;
+            & button {
+                color: $color-white !important;
+            }
+        }
+        &__month-view__weekdays {
+            background: #2b1a61;
+            color: #cccad6;
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
+            margin-top: -10px;
+        }
+        .react-calendar__tile--active {
+            background: $color-blue-light;
+            color: $color-white;
+        }
+        &__month-view__days {
+            & button {
+                background: #473093;
+                color: #a28fe0;
+            }
+            &
+                .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend.react-calendar__month-view__days__day--neighboringMonth {
+                background: #2b1a61 !important;
+                color: #6e5fa3 !important;
+            }
+            &
+                .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend {
+                background: #473093 !important;
+                color: #a28fe0 !important;
+            }
+            &
+                .react-calendar__tile.react-calendar__tile--now.react-calendar__tile--active.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
+                background: $color-blue-light !important;
+                color: $color-white !important;
+            }
+        }
+    }
+}

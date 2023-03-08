@@ -1,0 +1,12 @@
+.project-revenue {
+    background-color: #1c0f48;
+    &-bg {
+        color: #b4a9c7;
+    }
+    &-progress {
+        background-color: #271c5a;
+    }
+    &-progress-bar {
+        background-color: $color-purple-light;
+    }
+}

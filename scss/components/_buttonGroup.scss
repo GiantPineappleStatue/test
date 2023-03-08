@@ -1,0 +1,43 @@
+.carousel-button-group {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    @media screen and (min-width: 0px) and (max-width: 425px) {
+     top: 15px;
+    }
+    .slider_heading {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      padding-left: 24px;
+      @media screen and (min-width: 0px) and (max-width: 425px) {
+        font-size: 18px;
+      }
+    }
+    .slider-link {
+      font-style: normal;
+      font-weight: 450;
+      font-size: 18px;
+      line-height: 30px;
+      text-decoration: underline;
+      cursor: pointer;
+      padding-right: 40px;
+      color: $white;
+      @media screen and (min-width: 0px) and (max-width: 425px) {
+        font-size: 12px;
+      }
+    }
+    .buttonWrapper {
+      grid-gap: 10px;
+      @include flexbox();
+      .btn {
+        padding: 15px 18px !important;
+        border-radius: 50% !important;
+        background-color: $blue !important;
+      }
+    }
+  }
+  

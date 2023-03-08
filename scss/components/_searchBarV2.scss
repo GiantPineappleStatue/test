@@ -1,0 +1,81 @@
+.search_wrap {
+    .search {
+      width: 100%;
+      display: flex;
+      position: relative;
+      height: 50px;
+      input {
+        max-width: 100%;
+        position: relative;
+        border: 3px solid $blue;
+        border-right: none;
+        padding: 0 0 0 30px;
+        border-radius: 0px 8px 8px 0px;
+        width: 600px;
+        outline: none;
+        background-color: $blue;
+        color: $white;
+        font-size: 17px;
+        line-height: 30px;
+        @media only screen and (max-width: 375px) {
+          width: 260px !important;
+          height: 48px;
+        }
+        @media only screen and (max-width: 1440px) {
+          width: 480px !important;
+        }
+        @media only screen and (max-width: 600px) {
+          width: 300px;
+        }
+        @media only screen and (max-width: 1200px) {
+          width: 350px;
+        }
+        &:focus {
+          color: $white;
+        }
+        ::placeholder {
+          font-size: 17px;
+          opacity: 0.5;
+          &:focus {
+            opacity: 0.5;
+          }
+        }
+      }
+      .searchButton {
+        top: 5px;
+        position: absolute;
+        border: 1px solid #160d2f;
+        background: #160D2F;
+        text-align: center;
+        border-radius: 11px;
+        cursor: pointer;
+        font-size: 20px;
+        right: 5px;
+        height: 40px;
+        @media only screen and (max-width: 375px) {
+          padding: 6px;
+        }
+        svg {
+          @media only screen and (max-width: 375px) {
+            width: 16px;
+          }
+        }
+      }
+      select {
+        background-color: $blue;
+        color: $white-opacity;
+        border: 0;
+        border-radius: 8px 0px 0px 8px;
+        padding: 12px;
+        width: 75px;
+        border-right: 1px solid #322163;
+        @media only screen and (max-width: 375px) {
+          width: unset;
+        }
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+  

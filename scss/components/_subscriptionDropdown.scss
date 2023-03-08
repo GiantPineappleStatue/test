@@ -1,0 +1,107 @@
+.subscription-dropdown {
+    @include responsive(phone) {
+        max-width: 25rem;
+    }
+    z-index: 20;
+
+    position: relative;
+    &__caret {
+        position: absolute;
+        top: -47px;
+        right: 20px;
+    }
+    &__caret:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #2a1a61;
+    }
+    & .MuiPaper-root {
+        position: relative;
+        background: #2a1a61;
+        margin-top: 15px;
+        border-radius: 5px;
+        border-radius: 5px !important;
+    }
+    &__btn {
+        border-bottom-right-radius: 0.4rem !important;
+        border-bottom-left-radius: 0.4rem !important;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+    }
+}
+.subscription-card {
+    position: relative;
+    background: #362082;
+    text-align: center;
+    width: 11rem;
+    &__edit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #3f298e;
+    }
+    &__duration,
+    &__desc {
+        color: #a7a0c2;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__title,
+    &__price {
+        color: $color-white;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 34px;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &__btn {
+        &-active {
+            outline: 2px solid $color-blue-light !important;
+            outline-offset: 0.4rem;
+        }
+    }
+}
+.subscription-edit-card {
+    background: #270e5f;
+    width: 16rem;
+    text-align: center;
+    position: relative;
+    &__edit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #3f298e;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    & input {
+        padding: 0px !important;
+    }
+    &__price {
+        font-size: 30px;
+        font-weight: 700;
+        color: $color-white;
+    }
+    &__duration,
+    &__desc {
+        font-size: 13px;
+        font-weight: 300;
+        color: #8e85a4 !important;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        color: $color-white;
+    }
+    &__btn {
+        font-size: 13px !important;
+    }
+}

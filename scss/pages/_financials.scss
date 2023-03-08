@@ -1,0 +1,169 @@
+.financials {
+    &-head__text {
+        color: #b8b2cd;
+    }
+    &-user-card {
+        margin-top: 30px;
+        &__title {
+            color: #1ba6ff;
+        }
+        &__description {
+            color: #c4c4c4;
+        }
+    }
+    &-vertical-line {
+        border-left: 1px solid #35295f;
+        height: 80%;
+        margin-left: 50%;
+        margin-top: 30%;
+        margin-bottom: 20%;
+    }
+    &-card {
+        @media (min-width: 1400px) {
+            padding: 53.5% 10%;
+        }
+        @include responsive(tab-land) {
+            padding: 64% 10%;
+        }
+        @include responsive(big-desktop) {
+            padding: 46% 10%;
+        }
+        border: 1px solid #9789c6;
+        padding: 33% 10%;
+        &__bar {
+            background: #2a8bff;
+            width: 30px;
+            height: 1px;
+        }
+        height: 600px !important;
+        @include responsive(tab-port) {
+            height: 619px !important;
+        }
+    }
+    &-card1 {
+        @include responsive(tab-land) {
+            padding: 29% 10% !important;
+            height: 405px !important;
+        }
+        @include responsive(big-desktop) {
+            padding: 19.5% 10% !important;
+            height: 430px !important;
+        }
+        height: 431px !important;
+    }
+    &-card2 {
+        height: 390px !important;
+        @include responsive(tab-port) {
+            height: 405px !important;
+        }
+    }
+    &-card3 {
+        @include responsive(tab-port) {
+            height: 503px !important;
+        }
+        @include responsive(tab-land) {
+            padding: 14.5% 10% !important;
+            height: 475px !important;
+        }
+        height: 630px !important;
+    }
+    &-card1,
+    &-card3 {
+        border: 1px solid #9789c6;
+        margin-bottom: 2px;
+        padding: 20% 10%;
+        &__bar {
+            background: #2a8bff;
+            width: 30px;
+            height: 1px;
+        }
+    }
+    &-card1,
+    &-card3 {
+        &-bg {
+            margin-bottom: 1px;
+            padding: 20% 10%;
+            border: 1px solid #9789c6;
+            &__bar {
+                background: #2a8bff;
+                width: 30px;
+                height: 1px;
+            }
+        }
+    }
+    &-card2 {
+        @media (min-width: 1400px) {
+            padding: 29% 10%;
+        }
+        @include responsive(tab-land) {
+            padding: 32.5% 10%;
+        }
+        @include responsive(big-desktop) {
+            padding: 23.5% 10%;
+        }
+        border: 1px solid #9789c6;
+        margin-bottom: 2px;
+        padding: 11% 10%;
+        &__bar {
+            background: #2a8bff;
+            width: 30px;
+            height: 1px;
+        }
+    }
+    &-revenue {
+        &-center {
+            &__bar {
+                width: 180px;
+                height: 1px;
+                background: #35295f;
+                margin: 2px auto;
+            }
+            &__img {
+                display: block;
+                margin: 0 auto;
+                padding: 16% 0;
+            }
+            &__box {
+                width: 20px;
+                height: 20px;
+                border-radius: 10%;
+                background: $color-blue-light;
+                margin-right: 10px;
+            }
+            &__box + p {
+                font-size: 0.8rem;
+                margin: auto 0;
+            }
+        }
+    }
+    &-bottom {
+        &-center {
+            &__bar {
+                background: #35295f;
+                width: 150px;
+                height: 1px;
+                margin: auto;
+            }
+        }
+        &-sidebar {
+            &__creator {
+                background: linear-gradient(to bottom right, #1ab7ff, #93e094);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                &--video {
+                    background: #1ba6ff;
+                }
+                &--audio {
+                    background: #b761de;
+                }
+            }
+        }
+        &-right-sidebar {
+            &__distributor {
+                background: linear-gradient(to bottom right, #a987ff, #e55478);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+    }
+}

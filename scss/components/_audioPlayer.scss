@@ -1,0 +1,25 @@
+.rhap_container {
+    background: transparent !important;
+    box-shadow: none !important;
+    width: 400px !important;
+}
+.rhap_time {
+    color: $color-white !important;
+}
+.rhap_button-clear {
+    color: #d6dde3 !important;
+}
+.rhap_repeat-button {
+    opacity: 0 !important;
+}
+.rhap_progress-bar,
+.rhap_volume-bar {
+    background: #d6dde3 !important;
+}
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+    background: #8f5aff !important;
+}
+.rhap_volume-bar {
+    margin-top: 2px;
+}

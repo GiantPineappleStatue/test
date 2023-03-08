@@ -1,0 +1,133 @@
+.download-dropdown {
+    z-index: 20;
+    @include responsive(phone) {
+        width: 25rem;
+    }
+    position: relative;
+    &__caret {
+        position: absolute;
+        top: -47px;
+        right: 20px;
+    }
+    &__caret:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #271851;
+    }
+    & .MuiPaper-root {
+        position: relative;
+        background: #271851;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    &__item {
+        background-color: #312462;
+        & P:last-child {
+            color: #dee2e661;
+        }
+        cursor: pointer;
+    }
+    &__item.blue {
+        background-color: #1ba6ff;
+    }
+    &__item.green {
+        background-color: #5fbc13;
+    }
+    &__item.purple {
+        background-color: #8f5aff;
+    }
+    &__line {
+        width: 100%;
+        height: 1px;
+        background: #dee2e661;
+    }
+    &__btn {
+        border-top-right-radius: 0rem !important;
+        border-top-left-radius: 0.4rem !important;
+        border-bottom-left-radius: 0.4rem !important;
+        border-bottom-right-radius: 0rem !important;
+    }
+    &__btn.subscription {
+        border-bottom-left-radius: 0rem !important;
+    }
+    &__btn--caret {
+        border-bottom-right-radius: 0.4rem !important;
+        border-top-right-radius: 0.4rem !important;
+        border-left-color: #dee2e661;
+        &.subscription--caret {
+            border-bottom-right-radius: 0rem !important;
+        }
+    }
+
+    &__ .payment-model {
+        left: 150px !important;
+        &__buy--button {
+            & span {
+                color: $color-white;
+            }
+            & .rounded-circle {
+                box-shadow: 12px 0px 2px -2px rgba(141, 95, 246, 1);
+            }
+            border: 1px solid rgb(116, 64, 246);
+            background: rgb(116, 64, 246) !important;
+            background: linear-gradient(
+                90deg,
+                rgba(116, 64, 246, 1) 0%,
+                rgba(142, 96, 249, 1) 35%
+            ) !important;
+        }
+        &__switch {
+            & .MuiSwitch-track {
+                background: rgb(116, 64, 246) !important;
+                background: linear-gradient(
+                    90deg,
+                    rgba(116, 64, 246, 1) 0%,
+                    rgba(142, 96, 249, 1) 35%
+                ) !important;
+            }
+            & .MuiSwitch-thumb {
+                color: white !important;
+            }
+
+            background: rgb(116, 64, 246) !important;
+            background: linear-gradient(
+                90deg,
+                rgba(116, 64, 246, 1) 0%,
+                rgba(142, 96, 249, 1) 35%
+            ) !important;
+        }
+        &__input {
+            border: 1px solid #453488 !important;
+            color: $color-white;
+        }
+        &__card {
+            background: #180f3a !important;
+            &--select {
+                position: relative;
+                background: #32246f;
+                cursor: pointer;
+                &.active {
+                    background: #8f61fb;
+                }
+                &--tick {
+                    position: absolute;
+                    background: $color-white;
+                    border-radius: 50%;
+                    bottom: 0;
+                    margin-bottom: -10px;
+                    right: 40%;
+                }
+            }
+        }
+        & .MuiPaper-root {
+            position: relative;
+            background: #2a1d5f;
+            margin-top: 15px;
+            border-radius: 5px;
+            margin-right: 40px !important;
+        }
+    }
+}

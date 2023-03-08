@@ -1,0 +1,59 @@
+.video-navbar {
+    // margin-bottom: 1.8rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.3rem;
+    &-line {
+        // @include responsive(big-desktop) {
+        //     margin-left: 4.3rem;
+        // }
+        // @include responsive(phone) {
+        //     margin-left: 0.7rem;
+        // }
+        // margin-left: 3.7rem;
+        width: 100%;
+        height: 1px;
+        background: #442878;
+        // background: #452879;
+        // margin-right: 1.5rem;
+    }
+    &-right {
+        // margin-left: 1.9rem;
+        // @include responsive(big-desktop) {
+        //     margin-left: 2.4rem;
+        // }
+        @include responsive(phone) {
+            margin-left: 0;
+            &__item {
+                padding-left: 0.2rem;
+                padding-right: 0.2rem;
+                font-size: 10px;
+            }
+        }
+        &__item {
+            font-size: 18px;
+        }
+        font-weight: 400;
+        background: transparent !important;
+
+        &__btn {
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            // font-size: 16px;
+        }
+    }
+    &-left {
+        @include responsive(phone) {
+            &__item {
+                //font-size: 13px;
+                padding-left: 0.1rem;
+                padding-right: 0.1rem;
+                font-size: 10px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        &-left__item {
+            font-size: 16px;
+        }
+    }
+}

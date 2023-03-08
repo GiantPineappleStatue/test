@@ -1,0 +1,10 @@
+.video-genre-tags {
+    &__tags,
+    &__genre,
+    &__uploadedOn,
+    &__uploadedBy {
+        @include responsive(phone) {
+            font-size: 0.8rem;
+        }
+    }
+}

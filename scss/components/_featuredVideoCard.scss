@@ -1,0 +1,47 @@
+// Featured Video Upper
+.video-js {
+    width: 100% !important;
+    border-radius: 10px;
+}
+.vjs-big-play-button {
+    display: none;
+}
+
+// Featured Video Down
+
+.video-beneath {
+    border-radius: 8px;
+    & .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .left h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        @media only screen and (max-width: 1199px) {
+            font-size: 16px;
+        }
+        @media only screen and (max-width: 576px) {
+            font-size: 14px !important;
+        }
+    }
+    & .ratings {
+        display: flex;
+        align-items: center;
+    }
+    & .rating {
+        color: #fff;
+        opacity: 0.5;
+    }
+    & .titleTagline {
+        opacity: 0.5;
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,24 @@
+.featured-videos {
+    @include responsive(phone) {
+        margin-right: 1rem;
+    }
+    & .profile-card-left {
+        width: 400px !important;
+        min-width: 400px !important;
+        @include responsive(phone) {
+            width: 230px !important;
+            min-width: 230px !important;
+        }
+    }
+    & img {
+        // width: 400px !important;
+        height: 225px !important;
+        object-fit: cover !important;
+    }
+    & .profile-card-right {
+        width: 400px !important;
+        @include responsive(phone) {
+            display: none;
+        }
+    }
+}

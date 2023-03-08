@@ -1,0 +1,12 @@
+.community-card {
+    border-radius: 5% !important;
+    & p {
+        color: $color-white;
+    }
+    &:hover {
+        background-color: $color-white;
+    }
+    &:hover p {
+        color: #2487ff;
+    }
+}

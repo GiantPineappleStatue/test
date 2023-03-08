@@ -1,0 +1,11 @@
+.profile-navigation {
+    background: rgb(28, 15, 72);
+    max-width: 100%;
+    // min-height: 46px;
+    padding: 7px 10px;
+    & p {
+        padding: 5px 10px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+}

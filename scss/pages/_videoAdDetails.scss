@@ -1,0 +1,46 @@
+.ad-details {
+    &-title {
+        color: $color-white;
+    }
+    &-line {
+        width: 100%;
+        height: 1px;
+        background: #3b2a6c;
+    }
+    &-options {
+        color: #cecedf !important;
+    }
+    &-info {
+        color: #bcadcf !important;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &-age {
+        &-cont {
+            background: #1f0d44;
+            &__slider {
+                & .MuiSlider-rail {
+                    background: #573b89 !important;
+                    height: 6px !important;
+                }
+                & .MuiSlider-track {
+                    background: $color-blue-light !important;
+                    height: 6px !important;
+                }
+                & .MuiSlider-thumb {
+                    background: $color-white !important;
+                }
+            }
+        }
+    }
+    &-location-select {
+        margin-left: 14.5rem;
+    }
+    &-location {
+        margin-left: 8.5rem;
+    }
+    &-whitelist__check {
+        color: #e7e7e7 !important;
+        font-weight: 300;
+    }
+}

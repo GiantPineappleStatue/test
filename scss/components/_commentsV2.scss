@@ -1,0 +1,46 @@
+.comments-sec{
+    padding:  0 24px;
+    .heading {
+        font-style: normal;
+        font-weight: $regular-weight;
+        font-size: 20px;
+        border-bottom: 1px solid $white-opacity;
+        margin-bottom: 0;
+        padding: 8px 0;
+      }
+      .image-wrapper{
+        width: 50px;
+        @media screen and (max-width: 991px) {
+          width: 88px;
+        }
+      }
+      .comments-wrapper {
+        @include flexbox();
+        margin-bottom: 24px;
+        padding-top: 24px;
+        .comment-content {
+          margin-left: 16px;
+          h3 {
+            font-style: normal;
+            font-weight: $regular-weight;
+            font-size: 16px;
+            margin-bottom: 0;
+          }
+          .like-dislike-section {
+            margin-top: 16px;
+            @include flexbox();
+            @include align-items(center);
+            gap: 10px;
+          }
+          p {
+            font-weight: 450;
+            font-size: 16px;
+            margin-top: 8px;
+            color: #fff;
+            opacity: 0.8;
+          }
+        }
+      }
+
+}
+

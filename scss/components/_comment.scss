@@ -1,0 +1,38 @@
+.comment {
+    @include responsive(phone) {
+        background: none;
+    }
+    &-input {
+        outline: none;
+        border: 0;
+        border-bottom: 1px solid #574a7f;
+        width: 100%;
+        background: transparent;
+        margin: auto 0;
+        color: white;
+        &::placeholder {
+            color: white;
+        }
+        font-weight: 300;
+    }
+    &-cancel__btn {
+        color: $color-white;
+        &:hover {
+            color: $color-white;
+        }
+    }
+    &-card {
+        &__date {
+            color: #8984a2;
+        }
+        &__comment {
+            // font-size: 0.9rem;
+        }
+        &__bottom {
+            color: #b5b3be;
+            &:hover {
+                color: #b5b3be;
+            }
+        }
+    }
+}

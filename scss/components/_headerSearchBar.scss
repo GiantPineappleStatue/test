@@ -1,0 +1,98 @@
+.header-searchbar {
+    @include responsive(phone) {
+        padding-left: 0px;
+        display: none !important;
+    }
+    &-left {
+        &__sugg {
+            background: '#fff' !important;
+            color: #000;
+            max-height: 300px;
+            overflow-y: scroll;
+            max-width: 35rem !important;
+            position: fixed;
+            overflow-x: hidden;
+            z-index: 1000;
+            top: 70px;
+            & p {
+                padding: 5px 0px;
+                width: 50rem !important;
+                &:hover {
+                    background: #eee;
+                    font-size: 14.5px;
+                }
+            }
+            @include responsive(big-desktop) {
+                max-width: 90rem !important;
+            }
+            @media (max-width: 768px) {
+                max-width: 15rem !important;
+                & p {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        @include responsive(phone) {
+            margin-left: 1rem;
+            &__search {
+                margin-top: 10px !important;
+            }
+            &__sugg {
+                max-width: 18rem;
+            }
+        }
+        &__search {
+            margin-top: 12px;
+            margin-left: 9px;
+            position: absolute;
+        }
+    }
+    &-right {
+        &__popup {
+            z-index: 100;
+            & .MuiPaper-root {
+                background-color: $--search-background !important;
+                color: inherit !important;
+                border-radius: 10px !important;
+                margin-top: 10px;
+            }
+        }
+        &__btn {
+            // margin-top: 0.65rem;
+            font-size: 0.9rem;
+            background: #8cde0d;
+            color: #756c9f;
+            height: 38px !important;
+        }
+        &__btn1 {
+            border-right: 1px solid #756c9f;
+            // margin-top: 0.65rem;
+            font-size: 1rem;
+            height: 38px !important;
+            line-height: 14px;
+            border-radius: 0px !important;
+            // background: #48259c;
+            background: #07011d;
+            color: #756c9f;
+        }
+        @include responsive(phone) {
+            &__btn {
+                margin-top: 0.4rem !important;
+            }
+        }
+    }
+}
+
+#inputID {
+    background: #07011d;
+    color: #756c9f;
+    height: 40px;
+    border-style: none;
+    padding-left: 27px;
+    outline: 'none';
+
+    &:focus {
+        outline: none;
+    }
+}
